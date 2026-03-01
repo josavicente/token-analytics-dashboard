@@ -7,3 +7,4 @@
 - Fix runtime parsing against the current export shape so the dashboard renders instead of failing on load.
 - Add a minimal typed analytics layer for SPA pageviews, navigation clicks, filter changes, session selection, and archive month selection.
 - Add baseline tests for schema parsing and normalization behavior.
+- Improve the README with user-friendly setup guidance, data format explanations, architecture notes, and troubleshooting.
