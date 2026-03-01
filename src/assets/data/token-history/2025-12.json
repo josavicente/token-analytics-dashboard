@@ -1,0 +1,578 @@
+{
+  "generated_at": "2026-03-01T11:37:44.599398+00:00",
+  "month": "2025-12",
+  "session_count": 9,
+  "sessions": [
+    {
+      "agent_source": "direct",
+      "assistant_messages": 36,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "date": "2025-12-06",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 18359296,
+      "final_input_tokens": 20229017,
+      "final_output_tokens": 62986,
+      "final_reasoning_output_tokens": 18112,
+      "final_total_tokens": 20292003,
+      "function_calls": {
+        "shell_command": 146,
+        "update_plan": 24
+      },
+      "insight_score": 100,
+      "insights": [
+        {
+          "message": "Session exceeded 1M total tokens.",
+          "metric": 20292003,
+          "scope": "session",
+          "severity": "high",
+          "type": "high_total_tokens"
+        },
+        {
+          "message": "A single turn imported a large amount of input context.",
+          "metric": 137417,
+          "scope": "session",
+          "severity": "high",
+          "type": "large_single_turn_input"
+        },
+        {
+          "message": "High tool-call volume suggests iterative re-reading or fragmented exploration.",
+          "metric": 170,
+          "scope": "session",
+          "severity": "medium",
+          "type": "tool_churn"
+        }
+      ],
+      "max_last_input_tokens": 137417,
+      "max_last_total_tokens": 137549,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/06/rollout-2025-12-06T16-56-50-019af461-5514-7e61-b68f-393791bf7fd8.jsonl",
+      "project_name": "josa-paint-minis",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "session_id": "019af461-5514-7e61-b68f-393791bf7fd8",
+      "size_bytes": 1753517,
+      "source": "vscode",
+      "started_at": "2025-12-06T15:56:50.836Z",
+      "suggestions": [
+        {
+          "category": "prompt",
+          "message": "Split long investigations into smaller bounded runs and checkpoint earlier.",
+          "priority": "high",
+          "scope": "session",
+          "type": "split_session_scope"
+        },
+        {
+          "category": "tooling",
+          "message": "Avoid broad file reads; prefer filtered `rg`, `tail`, or parser-first inspection.",
+          "priority": "high",
+          "scope": "session",
+          "type": "reduce_broad_reads"
+        },
+        {
+          "category": "tooling",
+          "message": "Batch related reads and summarize once before issuing more inspection commands.",
+          "priority": "medium",
+          "scope": "session",
+          "type": "batch_tool_reads"
+        }
+      ],
+      "token_events": 526,
+      "total_function_calls": 170,
+      "user_messages": 39
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 22,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "date": "2025-12-06",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 7328768,
+      "final_input_tokens": 8453799,
+      "final_output_tokens": 42871,
+      "final_reasoning_output_tokens": 20928,
+      "final_total_tokens": 8496670,
+      "function_calls": {
+        "shell_command": 82,
+        "update_plan": 11
+      },
+      "insight_score": 100,
+      "insights": [
+        {
+          "message": "Session exceeded 1M total tokens.",
+          "metric": 8496670,
+          "scope": "session",
+          "severity": "high",
+          "type": "high_total_tokens"
+        },
+        {
+          "message": "A single turn imported a large amount of input context.",
+          "metric": 88884,
+          "scope": "session",
+          "severity": "high",
+          "type": "large_single_turn_input"
+        },
+        {
+          "message": "High tool-call volume suggests iterative re-reading or fragmented exploration.",
+          "metric": 93,
+          "scope": "session",
+          "severity": "medium",
+          "type": "tool_churn"
+        }
+      ],
+      "max_last_input_tokens": 88884,
+      "max_last_total_tokens": 88924,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/06/rollout-2025-12-06T21-13-36-019af54c-6639-74e1-adbf-768262771860.jsonl",
+      "project_name": "josa-paint-minis",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "session_id": "019af54c-6639-74e1-adbf-768262771860",
+      "size_bytes": 940507,
+      "source": "vscode",
+      "started_at": "2025-12-06T20:13:36.185Z",
+      "suggestions": [
+        {
+          "category": "prompt",
+          "message": "Split long investigations into smaller bounded runs and checkpoint earlier.",
+          "priority": "high",
+          "scope": "session",
+          "type": "split_session_scope"
+        },
+        {
+          "category": "tooling",
+          "message": "Avoid broad file reads; prefer filtered `rg`, `tail`, or parser-first inspection.",
+          "priority": "high",
+          "scope": "session",
+          "type": "reduce_broad_reads"
+        },
+        {
+          "category": "tooling",
+          "message": "Batch related reads and summarize once before issuing more inspection commands.",
+          "priority": "medium",
+          "scope": "session",
+          "type": "batch_tool_reads"
+        }
+      ],
+      "token_events": 296,
+      "total_function_calls": 93,
+      "user_messages": 25
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 8,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "date": "2025-12-07",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 3433600,
+      "final_input_tokens": 4206975,
+      "final_output_tokens": 44093,
+      "final_reasoning_output_tokens": 22016,
+      "final_total_tokens": 4251068,
+      "function_calls": {
+        "shell_command": 56,
+        "update_plan": 8
+      },
+      "insight_score": 100,
+      "insights": [
+        {
+          "message": "Session exceeded 1M total tokens.",
+          "metric": 4251068,
+          "scope": "session",
+          "severity": "high",
+          "type": "high_total_tokens"
+        },
+        {
+          "message": "A single turn imported a large amount of input context.",
+          "metric": 79643,
+          "scope": "session",
+          "severity": "high",
+          "type": "large_single_turn_input"
+        },
+        {
+          "message": "High tool-call volume suggests iterative re-reading or fragmented exploration.",
+          "metric": 64,
+          "scope": "session",
+          "severity": "medium",
+          "type": "tool_churn"
+        }
+      ],
+      "max_last_input_tokens": 79643,
+      "max_last_total_tokens": 80047,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/07/rollout-2025-12-07T15-13-06-019af928-b864-7c13-bb9f-16f68fe27aaf.jsonl",
+      "project_name": "josa-paint-minis",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "session_id": "019af928-b864-7c13-bb9f-16f68fe27aaf",
+      "size_bytes": 762401,
+      "source": "vscode",
+      "started_at": "2025-12-07T14:13:06.788Z",
+      "suggestions": [
+        {
+          "category": "prompt",
+          "message": "Split long investigations into smaller bounded runs and checkpoint earlier.",
+          "priority": "high",
+          "scope": "session",
+          "type": "split_session_scope"
+        },
+        {
+          "category": "tooling",
+          "message": "Avoid broad file reads; prefer filtered `rg`, `tail`, or parser-first inspection.",
+          "priority": "high",
+          "scope": "session",
+          "type": "reduce_broad_reads"
+        },
+        {
+          "category": "tooling",
+          "message": "Batch related reads and summarize once before issuing more inspection commands.",
+          "priority": "medium",
+          "scope": "session",
+          "type": "batch_tool_reads"
+        }
+      ],
+      "token_events": 191,
+      "total_function_calls": 64,
+      "user_messages": 12
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 40,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "date": "2025-12-10",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 37192960,
+      "final_input_tokens": 40448839,
+      "final_output_tokens": 168087,
+      "final_reasoning_output_tokens": 81472,
+      "final_total_tokens": 40616926,
+      "function_calls": {
+        "shell_command": 208,
+        "update_plan": 17
+      },
+      "insight_score": 100,
+      "insights": [
+        {
+          "message": "Session exceeded 1M total tokens.",
+          "metric": 40616926,
+          "scope": "session",
+          "severity": "high",
+          "type": "high_total_tokens"
+        },
+        {
+          "message": "A single turn imported a large amount of input context.",
+          "metric": 195344,
+          "scope": "session",
+          "severity": "high",
+          "type": "large_single_turn_input"
+        },
+        {
+          "message": "High tool-call volume suggests iterative re-reading or fragmented exploration.",
+          "metric": 225,
+          "scope": "session",
+          "severity": "medium",
+          "type": "tool_churn"
+        }
+      ],
+      "max_last_input_tokens": 195344,
+      "max_last_total_tokens": 197989,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/10/rollout-2025-12-10T14-20-47-019b086b-e45b-7c32-bbd9-bc165a014522.jsonl",
+      "project_name": "color-comparator-matcher",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "session_id": "019b086b-e45b-7c32-bbd9-bc165a014522",
+      "size_bytes": 3283974,
+      "source": "vscode",
+      "started_at": "2025-12-10T13:20:47.195Z",
+      "suggestions": [
+        {
+          "category": "prompt",
+          "message": "Split long investigations into smaller bounded runs and checkpoint earlier.",
+          "priority": "high",
+          "scope": "session",
+          "type": "split_session_scope"
+        },
+        {
+          "category": "tooling",
+          "message": "Avoid broad file reads; prefer filtered `rg`, `tail`, or parser-first inspection.",
+          "priority": "high",
+          "scope": "session",
+          "type": "reduce_broad_reads"
+        },
+        {
+          "category": "tooling",
+          "message": "Batch related reads and summarize once before issuing more inspection commands.",
+          "priority": "medium",
+          "scope": "session",
+          "type": "batch_tool_reads"
+        }
+      ],
+      "token_events": 765,
+      "total_function_calls": 225,
+      "user_messages": 45
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 2,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "date": "2025-12-10",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 188416,
+      "final_input_tokens": 223958,
+      "final_output_tokens": 3591,
+      "final_reasoning_output_tokens": 1920,
+      "final_total_tokens": 227549,
+      "function_calls": {
+        "shell_command": 16
+      },
+      "insight_score": 0,
+      "insights": [],
+      "max_last_input_tokens": 23661,
+      "max_last_total_tokens": 23834,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/10/rollout-2025-12-10T17-03-53-019b0901-3896-7981-84a9-470ab29d1ce3.jsonl",
+      "project_name": "color-comparator-matcher",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "session_id": "019b0901-3896-7981-84a9-470ab29d1ce3",
+      "size_bytes": 162503,
+      "source": "vscode",
+      "started_at": "2025-12-10T16:03:53.622Z",
+      "suggestions": [],
+      "token_events": 41,
+      "total_function_calls": 16,
+      "user_messages": 4
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 15,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "date": "2025-12-10",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 11164032,
+      "final_input_tokens": 12482448,
+      "final_output_tokens": 97021,
+      "final_reasoning_output_tokens": 62464,
+      "final_total_tokens": 12579469,
+      "function_calls": {
+        "shell_command": 73,
+        "update_plan": 10
+      },
+      "insight_score": 100,
+      "insights": [
+        {
+          "message": "Session exceeded 1M total tokens.",
+          "metric": 12579469,
+          "scope": "session",
+          "severity": "high",
+          "type": "high_total_tokens"
+        },
+        {
+          "message": "A single turn imported a large amount of input context.",
+          "metric": 115944,
+          "scope": "session",
+          "severity": "high",
+          "type": "large_single_turn_input"
+        },
+        {
+          "message": "High tool-call volume suggests iterative re-reading or fragmented exploration.",
+          "metric": 83,
+          "scope": "session",
+          "severity": "medium",
+          "type": "tool_churn"
+        }
+      ],
+      "max_last_input_tokens": 115944,
+      "max_last_total_tokens": 116531,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/10/rollout-2025-12-10T17-07-35-019b0904-9a28-7cc2-a09b-9aad5e060ad2.jsonl",
+      "project_name": "color-comparator-matcher",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "session_id": "019b0904-9a28-7cc2-a09b-9aad5e060ad2",
+      "size_bytes": 1441140,
+      "source": "vscode",
+      "started_at": "2025-12-10T16:07:35.208Z",
+      "suggestions": [
+        {
+          "category": "prompt",
+          "message": "Split long investigations into smaller bounded runs and checkpoint earlier.",
+          "priority": "high",
+          "scope": "session",
+          "type": "split_session_scope"
+        },
+        {
+          "category": "tooling",
+          "message": "Avoid broad file reads; prefer filtered `rg`, `tail`, or parser-first inspection.",
+          "priority": "high",
+          "scope": "session",
+          "type": "reduce_broad_reads"
+        },
+        {
+          "category": "tooling",
+          "message": "Batch related reads and summarize once before issuing more inspection commands.",
+          "priority": "medium",
+          "scope": "session",
+          "type": "batch_tool_reads"
+        }
+      ],
+      "token_events": 352,
+      "total_function_calls": 83,
+      "user_messages": 18
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 1,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "date": "2025-12-17",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 16768,
+      "final_input_tokens": 21568,
+      "final_output_tokens": 816,
+      "final_reasoning_output_tokens": 320,
+      "final_total_tokens": 22384,
+      "function_calls": {
+        "shell_command": 4
+      },
+      "insight_score": 0,
+      "insights": [],
+      "max_last_input_tokens": 5452,
+      "max_last_total_tokens": 5553,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/17/rollout-2025-12-17T11-46-08-019b2bea-d482-7f71-bb69-1275227853f0.jsonl",
+      "project_name": "josa-paint-minis",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/josa-paint-minis",
+      "session_id": "019b2bea-d482-7f71-bb69-1275227853f0",
+      "size_bytes": 29241,
+      "source": "vscode",
+      "started_at": "2025-12-17T10:46:08.770Z",
+      "suggestions": [],
+      "token_events": 9,
+      "total_function_calls": 4,
+      "user_messages": 4
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 1,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "date": "2025-12-17",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 16384,
+      "final_input_tokens": 21648,
+      "final_output_tokens": 616,
+      "final_reasoning_output_tokens": 128,
+      "final_total_tokens": 22264,
+      "function_calls": {
+        "shell_command": 4
+      },
+      "insight_score": 0,
+      "insights": [],
+      "max_last_input_tokens": 5422,
+      "max_last_total_tokens": 5549,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/17/rollout-2025-12-17T11-49-24-019b2bed-d222-7de1-a5b2-c11beadca124.jsonl",
+      "project_name": "color-comparator-matcher",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "session_id": "019b2bed-d222-7de1-a5b2-c11beadca124",
+      "size_bytes": 27753,
+      "source": "vscode",
+      "started_at": "2025-12-17T10:49:24.770Z",
+      "suggestions": [],
+      "token_events": 9,
+      "total_function_calls": 4,
+      "user_messages": 4
+    },
+    {
+      "agent_source": "direct",
+      "assistant_messages": 3,
+      "automation_id": null,
+      "automation_name": null,
+      "bad_lines": 0,
+      "cwd": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "date": "2025-12-24",
+      "explicit_skill_mentions": [],
+      "final_cached_input_tokens": 1363072,
+      "final_input_tokens": 1477489,
+      "final_output_tokens": 9358,
+      "final_reasoning_output_tokens": 5248,
+      "final_total_tokens": 1486847,
+      "function_calls": {
+        "shell_command": 39,
+        "update_plan": 3
+      },
+      "insight_score": 78,
+      "insights": [
+        {
+          "message": "Session exceeded 1M total tokens.",
+          "metric": 1486847,
+          "scope": "session",
+          "severity": "high",
+          "type": "high_total_tokens"
+        },
+        {
+          "message": "High tool-call volume suggests iterative re-reading or fragmented exploration.",
+          "metric": 42,
+          "scope": "session",
+          "severity": "medium",
+          "type": "tool_churn"
+        }
+      ],
+      "max_last_input_tokens": 48188,
+      "max_last_total_tokens": 48283,
+      "model_provider": "openai",
+      "originator": "codex_vscode",
+      "path": "/Users/josa/.codex/sessions/2025/12/24/rollout-2025-12-24T13-07-39-019b5041-f934-7031-9868-0d43d6bf2c79.jsonl",
+      "project_name": "color-comparator-matcher",
+      "project_path": "/Users/josa/Documents/Developer/web-projects/color-comparator-matcher",
+      "session_id": "019b5041-f934-7031-9868-0d43d6bf2c79",
+      "size_bytes": 369619,
+      "source": "vscode",
+      "started_at": "2025-12-24T12:07:39.572Z",
+      "suggestions": [
+        {
+          "category": "prompt",
+          "message": "Split long investigations into smaller bounded runs and checkpoint earlier.",
+          "priority": "high",
+          "scope": "session",
+          "type": "split_session_scope"
+        },
+        {
+          "category": "tooling",
+          "message": "Batch related reads and summarize once before issuing more inspection commands.",
+          "priority": "medium",
+          "scope": "session",
+          "type": "batch_tool_reads"
+        }
+      ],
+      "token_events": 91,
+      "total_function_calls": 42,
+      "user_messages": 6
+    }
+  ]
+}

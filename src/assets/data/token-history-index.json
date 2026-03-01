@@ -1,0 +1,14 @@
+{
+  "archive_count": 1,
+  "archives": [
+    {
+      "file": "token-history/2025-12.json",
+      "first_started_at": "2025-12-06T15:56:50.836Z",
+      "last_started_at": "2025-12-24T12:07:39.572Z",
+      "month": "2025-12",
+      "session_count": 9
+    }
+  ],
+  "generated_at": "2026-03-01T11:37:44.599398+00:00",
+  "retention_days": 60
+}
