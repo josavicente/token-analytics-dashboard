@@ -23,24 +23,6 @@ The dashboard reads local JSON files copied into the project and visualizes:
 
 It is currently an MVP and runs entirely in the browser. There is no backend.
 
-## Screenshots 🖼️
-
-### Overview
-
-![Overview dashboard](docs/screenshots/overview.png)
-
-### Sessions
-
-![Sessions view](docs/screenshots/sessions.png)
-
-### Dimensions
-
-![Dimensions view](docs/screenshots/dimensions.png)
-
-### Archives
-
-![Archives view](docs/screenshots/archives.png)
-
 ## Data Files Explained 🗂️
 
 The app expects the analysis output to be copied into `src/assets/data/`.
