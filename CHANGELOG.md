@@ -7,6 +7,7 @@
 - Redesign signal cards to bundle insights with related suggestions, prompt tips, context modals, and icon-led alert headers instead of the previous gauge-style header.
 - Improve signal filtering clarity and make filter results align with the rendered signal cards.
 - Add typed analytics events for overview scope changes and main overview tab changes.
+- Add dashboard screenshots to the README for the Overview, Sessions, Dimensions, and Archives views.
 
 ## 2026-03-01
 
