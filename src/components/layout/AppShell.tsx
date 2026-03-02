@@ -16,24 +16,43 @@ export function AppShell() {
   const { summaryState } = useDashboardData();
   usePageViewTracking();
 
+  const summary = summaryState.data;
+
   return (
     <div className="app-shell">
       <div className="shell-frame">
         <header className="shell-header">
+          <div className="shell-topline">
+            <div className="brand-lockup">
+              <span className="brand-badge">TA</span>
+              <div>
+                <p className="eyebrow">Token Diagnostics</p>
+                <p className="brand-caption">Operational lens for token-heavy workflows</p>
+              </div>
+            </div>
+            <div className="header-pills">
+              <div className="pill">
+                {summary ? `Generated ${formatTimestamp(summary.generated_at)}` : "Summary data unavailable"}
+              </div>
+              {summary ? <div className="pill pill-strong">{summary.session_count} sessions</div> : null}
+            </div>
+          </div>
+
           <div className="shell-title-row">
-            <div>
-              <p className="eyebrow">Token Diagnostics</p>
-              <h1 className="page-title">See the shape of your token spend.</h1>
+            <div className="headline-block">
+              <h1 className="page-title">Read the contour of your token usage.</h1>
               <p className="page-subtitle">
-                A client-side dashboard over the `token-performance-tuning` export. The app
-                reads local JSON artifacts copied into the project and highlights trends,
-                spikes, expensive sessions, and optimization clues.
+                A softer, clearer control surface for the `token-performance-tuning` export.
+                Track spend, spikes, session outliers, and archived behavior without digging
+                through raw JSON.
               </p>
             </div>
-            <div className="pill">
-              {summaryState.data
-                ? `Generated ${formatTimestamp(summaryState.data.generated_at)}`
-                : "Summary data unavailable"}
+            <div className="header-stats-card">
+              <span className="mini-stat-label">Current window</span>
+              <strong className="mini-stat-value">
+                {summary ? summary.summary_session_count.toLocaleString() : "0"}
+              </strong>
+              <span className="mini-stat-copy">active summary sessions in view</span>
             </div>
           </div>
           <nav className="shell-nav" aria-label="Primary">

@@ -7,9 +7,13 @@ interface FilterSelectProps {
 
 export function FilterSelect({ label, value, options, onChange }: FilterSelectProps) {
   return (
-    <label>
-      <span className="kpi-label">{label}</span>
-      <select className="select" value={value} onChange={(event) => onChange(event.target.value)}>
+    <label className="filter-control">
+      <span className="filter-label">{label}</span>
+      <select
+        className={`select filter-select${value !== "all" ? " is-active" : ""}`}
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+      >
         <option value="all">All</option>
         {options.map((option) => (
           <option key={option} value={option}>

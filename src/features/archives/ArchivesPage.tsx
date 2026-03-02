@@ -135,7 +135,7 @@ export function ArchivesPage() {
                 <tbody>
                   {archive.sessions
                     .slice()
-                    .sort((left, right) => right.final_total_tokens - left.final_total_tokens)
+                    .sort((left, right) => right.started_at.localeCompare(left.started_at))
                     .map((session) => (
                       <tr key={session.session_id}>
                         <td className="table-emphasis">{session.session_id.slice(-8)}</td>

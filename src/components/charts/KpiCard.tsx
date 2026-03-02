@@ -8,7 +8,10 @@ interface KpiCardProps {
 export function KpiCard({ metric }: KpiCardProps) {
   return (
     <article className="kpi-card">
-      <span className="kpi-label">{metric.label}</span>
+      <div className="kpi-topline">
+        <span className="kpi-label">{metric.label}</span>
+        <span className="kpi-orb" aria-hidden="true" />
+      </div>
       <span className="kpi-value">{formatTokenCount(metric.value)}</span>
       {metric.footnote ? <span className="kpi-footnote">{metric.footnote}</span> : null}
     </article>

@@ -103,12 +103,14 @@ Then open the local Vite URL shown in the terminal.
 
 High-level KPIs and trend charts:
 
+- rolling scopes for `Last week`, `Last 2 weeks`, `Last month`, and `All data`
+- a split main window with dedicated `Overview`, `Signals`, and `Trends` tabs
 - total tokens
 - input/output split
 - context spike tracking
 - top projects
-- global insights and suggestions
-- trend signals
+- signal bundles with related suggestions and prompt tips
+- trend signal cards
 
 ### Sessions
 
@@ -197,6 +199,8 @@ Tracked interactions include:
 
 - page views on initial load and route changes
 - navigation clicks
+- overview scope changes
+- overview tab changes
 - session selection
 - archive month selection
 - insight filter changes

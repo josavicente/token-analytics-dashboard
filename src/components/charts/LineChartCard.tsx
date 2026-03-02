@@ -3,6 +3,7 @@ import { GridRows } from "@visx/grid";
 import { ParentSize } from "@visx/responsive";
 import { scaleLinear, scalePoint } from "@visx/scale";
 import { LinePath } from "@visx/shape";
+import { curveMonotoneX } from "d3-shape";
 
 import { formatDateLabel, formatTokenCount } from "../../lib/formatters";
 
@@ -32,6 +33,15 @@ function Chart({ points, color }: Pick<LineChartCardProps, "points" | "color">) 
           const innerWidth = safeWidth - margin.left - margin.right;
           const innerHeight = safeHeight - margin.top - margin.bottom;
           const maxValue = Math.max(...points.map((point) => point.value), 1);
+          const maxLabels = safeWidth < 520 ? 4 : safeWidth < 860 ? 6 : 8;
+          const tickStep = Math.max(1, Math.ceil(points.length / maxLabels));
+          const tickValues = points
+            .filter((_, index) => index % tickStep === 0)
+            .map((point) => point.date);
+
+          if (points.length && tickValues[tickValues.length - 1] !== points[points.length - 1]?.date) {
+            tickValues.push(points[points.length - 1].date);
+          }
 
           const xScale = scalePoint<string>({
             domain: points.map((point) => point.date),
@@ -51,22 +61,35 @@ function Chart({ points, color }: Pick<LineChartCardProps, "points" | "color">) 
                   scale={yScale}
                   width={innerWidth}
                   height={innerHeight}
-                  stroke="rgba(148, 163, 184, 0.18)"
+                  stroke="rgba(148, 163, 184, 0.11)"
                 />
                 <LinePath
                   data={points}
                   x={(point) => xScale(point.date) ?? 0}
                   y={(point) => yScale(point.value)}
+                  curve={curveMonotoneX}
                   stroke={color}
-                  strokeWidth={3}
+                  strokeWidth={8}
+                  opacity={0.12}
+                  strokeLinecap="round"
+                />
+                <LinePath
+                  data={points}
+                  x={(point) => xScale(point.date) ?? 0}
+                  y={(point) => yScale(point.value)}
+                  curve={curveMonotoneX}
+                  stroke={color}
+                  strokeWidth={2.5}
+                  opacity={0.9}
+                  strokeLinecap="round"
                 />
                 <AxisLeft
                   scale={yScale}
-                  stroke="rgba(100, 116, 139, 0.5)"
-                  tickStroke="rgba(100, 116, 139, 0.5)"
+                  stroke="rgba(100, 116, 139, 0.22)"
+                  tickStroke="rgba(100, 116, 139, 0.18)"
                   tickLabelProps={() => ({
-                    fill: "#64748b",
-                    fontSize: 11,
+                    fill: "#7b8497",
+                    fontSize: 10,
                     textAnchor: "end",
                     dy: "0.33em",
                     dx: "-0.25em",
@@ -76,11 +99,12 @@ function Chart({ points, color }: Pick<LineChartCardProps, "points" | "color">) 
                 <AxisBottom
                   top={innerHeight}
                   scale={xScale}
-                  stroke="rgba(100, 116, 139, 0.5)"
-                  tickStroke="rgba(100, 116, 139, 0.5)"
+                  stroke="rgba(100, 116, 139, 0.22)"
+                  tickStroke="rgba(100, 116, 139, 0.18)"
+                  tickValues={tickValues}
                   tickLabelProps={() => ({
-                    fill: "#64748b",
-                    fontSize: 11,
+                    fill: "#7b8497",
+                    fontSize: 10,
                     textAnchor: "middle",
                   })}
                   tickFormat={(value) => formatDateLabel(String(value))}
